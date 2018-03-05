@@ -90,7 +90,6 @@ function System:__init(name, type, required, entityThink, systemThink)
 	for i = 1, #entities do -- For each entity
 		foundAllComponents = true
 		entity = entities[i]
-		print("Entity", entity)
 
 		for j = 1, #required do -- Get each required component
 			if not entity:get(required[j]) then -- If the component was not found
